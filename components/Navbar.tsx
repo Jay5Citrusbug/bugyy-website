@@ -15,14 +15,15 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
-                        <Link href="/" className="text-2xl font-bold hover:text-purple-200 transition">
-                            🛒 BuggyShop
+                        <Link href="/" className="text-2xl font-bold hover:text-purple-200 transition flex items-center gap-2">
+                            <img src="/broken-logo.png" alt="Logo" className="w-8 h-8" />
+                            BuggyShop
                         </Link>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex space-x-8">
                             <Link href="/" className="hover:text-purple-200 transition font-medium">
-                                Home
+                                Hoem
                             </Link>
                             <Link href="/products" className="hover:text-purple-200 transition font-medium">
                                 Products
@@ -64,7 +65,7 @@ export default function Navbar() {
                     <div className="md:hidden bg-purple-700">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             <Link href="/" className="block px-3 py-2 rounded-md hover:bg-purple-600">
-                                Home
+                                Hoem
                             </Link>
                             <Link href="/products" className="block px-3 py-2 rounded-md hover:bg-purple-600">
                                 Products

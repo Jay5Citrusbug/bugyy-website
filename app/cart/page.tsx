@@ -126,7 +126,7 @@ export default function CartPage() {
                             Proceed to Checkout
                         </button>
 
-                        <Link href="/products">
+                        <Link href="/prodcuts">
                             <button className="w-full mt-3 bg-gray-200 text-gray-800 py-3 rounded-lg hover:bg-gray-300 transition font-medium">
                                 Continue Shopping
                             </button>

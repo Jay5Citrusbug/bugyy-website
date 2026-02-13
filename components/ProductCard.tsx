@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+        <div className={`bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group ${parseInt(product.id) % 2 === 0 ? 'pb-12' : 'pb-4'}`}>
             {/* BUG #1: Image will appear blurry/stretched due to wrong aspect ratio in URLs */}
             <div className="relative h-64 bg-gray-100 overflow-hidden">
                 <Image
@@ -42,9 +42,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </p>
 
                 <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-purple-600">
-                        ${product.price.toFixed(2)}
-                    </span>
+                    <div className="flex flex-col">
+                        <span className="text-2xl font-bold text-purple-600">
+                            ${(product.price * 0.9).toFixed(2)}
+                        </span>
+                        <span className="text-sm text-gray-400 line-through">
+                            ${product.price.toFixed(2)}
+                        </span>
+                    </div>
 
                     <button
                         onClick={handleAddToCart}

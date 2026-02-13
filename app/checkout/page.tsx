@@ -61,7 +61,7 @@ export default function CheckoutPage() {
                 <h2 className="text-3xl font-bold text-gray-800">Your cart is empty</h2>
                 <p className="mt-2 text-gray-600">Add some products before checkout!</p>
                 <button
-                    onClick={() => router.push('/products')}
+                    onClick={() => { }}
                     className="mt-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all font-medium"
                 >
                     Browse Products
