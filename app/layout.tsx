@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BuggyShop - E-Commerce QA Practice",
+  title: "Citrusbug QA - E-Commerce Practice",
   description: "A Next.js e-commerce website with intentional bugs for QA testing practice",
 };
 

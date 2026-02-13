@@ -7,8 +7,8 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* About */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">BuggyShop</h3>
-                        <p className="text-gray-400">Your one-stop shop for Electronics, Fashion, and Books.</p>
+                        <h3 className="text-xl font-bold mb-4">Citrusbug QA</h3>
+                        <p className="text-gray-400">this website is created by Citrusbug QA team for testing perpose</p>
                     </div>
 
                     {/* Quick Links */}
@@ -25,7 +25,7 @@ export default function Footer() {
                     {/* Contact */}
                     <div>
                         <h3 className="text-xl font-bold mb-4">Contact</h3>
-                        <p className="text-gray-400">Email: support@buggyshop.com</p>
+                        <p className="text-gray-400">Email: qa.citrusbug@gmail.com</p>
                         <p className="text-gray-400">Phone: +1 (555) 123-4567</p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function Footer() {
                 {/* Using word-break-all will cause text to break character by character */}
                 <div className="mt-8 pt-8 border-t border-gray-800 text-center mobile-footer-bug">
                     <p className="text-gray-400 break-all sm:break-normal">
-                        © 2026 BuggyShop. All rights reserved. This is a QA practice website with intentional bugs.
+                        © 2026 Citrusbug QA team. All rights reserved. This is a QA practice website with intentional bugs.
                     </p>
                 </div>
             </div>

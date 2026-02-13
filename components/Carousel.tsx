@@ -5,19 +5,19 @@ import Image from 'next/image';
 
 const carouselImages = [
     {
-        url: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=400&fit=crop',
-        title: 'Welcome to BuggyShop',
-        subtitle: 'Discover Amazing Products'
+        url: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=400&fit=crop',
+        title: 'Find Hidden Bugs',
+        subtitle: 'Discover critical and UI bugs across the application just like real-world projects.'
     },
     {
-        url: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=400&fit=crop',
-        title: 'Premium Electronics',
-        subtitle: 'Latest Tech at Great Prices'
+        url: 'https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200&h=400&fit=crop',
+        title: 'Test Responsive Design',
+        subtitle: 'Check how the website behaves on mobile, tablet, and desktop devices.'
     },
     {
-        url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=400&fit=crop',
-        title: 'Fashion Collection',
-        subtitle: 'Trending Styles for Everyone'
+        url: 'https://images.unsplash.com/photo-1454165833767-027508992bdb?w=1200&h=400&fit=crop',
+        title: 'Think Like a Product owner',
+        subtitle: 'Improve logical thinking by exploring real-life broken features and edge cases.'
     }
 ];
 
@@ -107,8 +107,8 @@ export default function Carousel() {
                         key={index}
                         onClick={() => goToSlide(index)}
                         className={`w-3 h-3 rounded-full transition ${index === currentSlide
-                                ? 'bg-white scale-125'
-                                : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+                            ? 'bg-white scale-125'
+                            : 'bg-white bg-opacity-50 hover:bg-opacity-75'
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     />

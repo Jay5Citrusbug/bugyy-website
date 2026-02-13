@@ -13,8 +13,9 @@ export default function ProductsPage() {
 
     let filteredProducts = products.filter(product => {
         const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
-        const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            product.description.toLowerCase().includes(searchQuery.toLowerCase());
+        // BUG #11: Search only matches the beginning of the name, ignoring subsequent words
+        const matchesSearch = product.name.toLowerCase().startsWith(searchQuery.toLowerCase()) ||
+            product.description.toLowerCase().startsWith(searchQuery.toLowerCase());
         return matchesCategory && matchesSearch;
     });
 

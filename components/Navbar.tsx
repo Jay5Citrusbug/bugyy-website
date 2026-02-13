@@ -17,7 +17,7 @@ export default function Navbar() {
                         {/* Logo */}
                         <Link href="/" className="text-2xl font-bold hover:text-purple-200 transition flex items-center gap-2">
                             <img src="/broken-logo.png" alt="Logo" className="w-8 h-8" />
-                            BuggyShop
+                            Citrusbug QA
                         </Link>
 
                         {/* Desktop Navigation */}
